@@ -403,3 +403,101 @@ nav .fa-solid{
     margin-top: -40px;
     display: block;
 }
+
+
+/* 2026 portfolio refresh */
+.header-text p {
+    color: #d2d2d2;
+    font-weight: 500;
+}
+
+.hero-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.hero-links .btn {
+    margin: 0;
+}
+
+.section-intro {
+    color: #ababab;
+    margin-top: 12px;
+    max-width: 720px;
+    line-height: 1.6;
+}
+
+.tab-links {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: #ababab;
+    font-family: inherit;
+}
+
+.tab-links.active-link {
+    color: #fff;
+}
+
+.work {
+    min-height: 320px;
+    background: #1a1a1a;
+}
+
+.work img {
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+}
+
+.layer p {
+    line-height: 1.5;
+}
+
+.project-links {
+    display: flex;
+    gap: 12px;
+}
+
+.project-links a {
+    margin-top: 20px;
+}
+
+#contact {
+    padding-top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-text {
+        margin-top: 95%;
+        text-align: left;
+    }
+
+    .header-text h1 {
+        margin-top: 18px;
+    }
+
+    .hero-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .hero-links .btn {
+        padding: 12px 24px;
+    }
+
+    .work-list {
+        grid-gap: 24px;
+    }
+
+    .work,
+    .work img {
+        min-height: 280px;
+    }
+
+    .tab-titles {
+        overflow-x: auto;
+    }
+}
