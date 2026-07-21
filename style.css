@@ -452,6 +452,17 @@ nav .fa-solid{
     object-fit: cover;
 }
 
+.work img.project-screenshot {
+    object-fit: contain;
+    object-position: center;
+    background: #141414;
+    padding: 8px;
+}
+
+.work:hover img.project-screenshot {
+    transform: none;
+}
+
 .layer p {
     line-height: 1.5;
 }
