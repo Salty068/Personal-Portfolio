@@ -3,65 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <meta name="description" content="Sultan Sadiq - software engineer focused on enterprise automation, AI-enabled workflows, full-stack development, and reliable systems.">
+    <title>Sultan Sadiq | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
-            <img src="Images/Heading.png" class="logo">
+            <img src="Images/Heading.png" class="logo" alt="Sultan Sadiq">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <!-- <li><a href="#">Services</a></li> -->
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                <i class="fa-solid fa-times" onclick="closemenu()" aria-label="Close navigation"></i>
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <i class="fa-solid fa-bars" onclick="openmenu()" aria-label="Open navigation"></i>
         </nav>
         <div class="header-text">
-            <p>CS Student</p>
-            <h1>Hi, I'm <span>Sultan Sadiq</span><br>From USA</h1>
+            <p>Software Engineer | Enterprise Automation | AI-Enabled Systems</p>
+            <h1>Hi, I'm <span>Sultan Sadiq</span><br>based in Houston.</h1>
+            <div class="hero-links">
+                <a href="#portfolio" class="btn btn2">View Projects</a>
+                <a href="https://github.com/Salty068" class="btn">GitHub</a>
+            </div>
         </div>
     </div>
 </div>
 
-<!-----------about------------------->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="Images/user2.png">
+                <img src="Images/user2.png" alt="Sultan Sadiq">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Hi, I’m Sultan Sadiq, a junior studying Computer Science at the University of Houston. I’m passionate about machine learning, AI technologies, and operating systems, and I’m always looking for opportunities to learn and grow in these fields. Beyond academics, I served as a Resident Advisor and am a proud member of Tau Kappa Epsilon. I thrive in environments where I can collaborate with others, solve challenging problems, and push the boundaries of innovation. Currently, I’m exploring internship opportunities where I can apply my technical skills and gain hands-on experience in the industry. If you’d like to connect, feel free to reach out!</p>
+                <p>I am a Houston-based software engineer with a Computer Science background from the University of Houston. My experience spans Java and Spring Boot automation, enterprise REST API integrations, AI-enabled knowledge workflows, full-stack web applications, cloud platforms, and production-focused troubleshooting. I enjoy turning complex requirements into reliable tools, tracing failures across system boundaries, and collaborating with others to improve how technology supports people.</p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <button class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</button>
+                    <button class="tab-links" onclick="opentab(event, 'experience')">Experience</button>
+                    <button class="tab-links" onclick="opentab(event, 'education')">Education</button>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Programming Languages</span><br>Python/C++/HTML5/Javascript</li>
-                        <li><span>Web Developer</span><br>Designing Web/App Interfaces</li>
-                        <li><span>Database Management</span><br>MySQL/MongoDB</li>
-                        <li><span>Frontend Development</span><br>React/CSS/</li>
-                        <li><span>Backend Development</span><br>Node.js/Express.js</li>
+                        <li><span>Languages</span><br>Java, Python, C++, C#, JavaScript, TypeScript, SQL, HTML, CSS</li>
+                        <li><span>Frameworks & Data</span><br>Spring Boot, React, Node.js, Express, Socket.IO, MongoDB, MySQL, Firebase, Prisma</li>
+                        <li><span>Cloud & Platforms</span><br>AWS, Microsoft Azure, GitHub, GitLab, Jira, Confluence, Slack, xMatters, Unity</li>
+                        <li><span>AI & Integration</span><br>REST APIs, JSON Schema, JSONPath, RAG, LLM tool use, prompt engineering, Gemini/Vertex AI</li>
+                        <li><span>Email Technologies</span><br>Microsoft 365 fundamentals, email routing, DKIM, DNS</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>2023 - 2024</span><br>Software Engineer Intern for Docupath Data Analytics</li>
-                        <li><span>2023 - 2025</span><br>Resident Advisor at University of Houston</li>
+                        <li><span>2026 - Present</span><br>Site Reliability Engineer Intern, Kohl's</li>
+                        <li><span>2023 - 2024</span><br>Software Engineer Intern, Docupath Data Analytics</li>
+                        <li><span>2023 - 2025</span><br>Resident Advisor, University of Houston</li>
+                        <li><span>2023 - 2024</span><br>Academic Chair, Tau Kappa Epsilon</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2022 - Current</span><br>BS Computer Science at University of Houston</li>
+                        <li><span>May 2026</span><br>Bachelor of Science in Computer Science, University of Houston</li>
+                        <li><span>Academic Achievement</span><br>GPA: 3.62</li>
                     </ul>
                 </div>
             </div>
@@ -69,61 +76,77 @@
     </div>
 </div>
 
-
-<head>
-    <!-- Add this line to include the most up-to-date Font Awesome (v6.4.0) -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-</head>
-
-
-<!-- ----------portfolio-------- -->
- <div id="portfolio">
+<div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">Selected Projects</h1>
+        <p class="section-intro">A selection of full-stack, automation, web, and game-development work.</p>
         <div class="work-list">
-            <div class="work">
-                <img src="Images/work-1.png" >
+            <article class="work">
+                <img src="Images/work-1.png" alt="Real-time chat application">
                 <div class="layer">
-                    <h3>Full Stack App</h3>
-                    <p>Real Time Chat app </p>
-                    <a href="https://fullstack-chat-app-qut0.onrender.com/login"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Real-Time Chat Application</h3>
+                    <p>Responsive Node.js, Express, Socket.IO, and MongoDB application with authentication and secure session handling.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Salty068/FullStack-Chat-App" aria-label="View chat application source"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://fullstack-chat-app-qut0.onrender.com/login" aria-label="Open chat application"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="Images/work-2.png" >
+            </article>
+            <article class="work">
+                <img src="Images/work-3.png" alt="Volunteer management application">
                 <div class="layer">
-                    <h3>2D Roguelike Game</h3>
-                    <p>Work in progress</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Volunteer Management Platform</h3>
+                    <p>Full-stack React and TypeScript application using Express, Firebase, Prisma, and MySQL with tested user-profile management.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Salty068/Software-Design-Class" aria-label="View volunteer application source"><i class="fa-brands fa-github"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="Images/work-3.png" >
+            </article>
+            <article class="work">
+                <img src="Images/work-2.png" alt="Tower of Judgement game">
                 <div class="layer">
-                    <h3>Web app</h3>
-                    <p>Work in progress</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Tower of Judgement</h3>
+                    <p>Team-built 2D top-down action-adventure PC game developed in Unity through a pull-request-based workflow.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Salty068/tower-of-judgement" aria-label="View game source"><i class="fa-brands fa-github"></i></a>
+                    </div>
                 </div>
-            </div>
+            </article>
+            <article class="work">
+                <img src="Images/work-3.png" alt="Web novel reader">
+                <div class="layer">
+                    <h3>Tribulation of Myriad Realms Reader</h3>
+                    <p>Responsive JavaScript reader with keyboard navigation, persistent reading position, and automated GitHub Pages deployment.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Salty068/tribulation-of-Myriad-Realms" aria-label="View reader source"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </article>
+            <article class="work">
+                <img src="Images/work-2.png" alt="African mythology role-playing game">
+                <div class="layer">
+                    <h3>African Mythology Mugen</h3>
+                    <p>Two-player role-playing game inspired by Nigerian mythology with save and resume functionality.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Salty068/African-Mythology-Mugen" aria-label="View RPG source"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </article>
         </div>
-        <a href="https://github.com/Salty068" class="btn">See more</a>
+        <a href="https://github.com/Salty068?tab=repositories" class="btn">View All Repositories</a>
     </div>
- </div>
+</div>
 
- <!-- -----------contact-------- -->
-  <div id="contact">
+<div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>   sultansadiq06@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>   3133293543</p>
+                <p><i class="fa-solid fa-envelope"></i> sultansadiq06@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (313) 329-3543</p>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/sultan.sadiq.9889"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/salty_sadq/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/sultan-sadiq-71004724a/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://x.com/SultanSalty06"><i class="fa-brands fa-x-twitter"></i></a>
-                    
+                    <a href="https://www.linkedin.com/in/sultan-sadiq-uh/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Salty068" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <a href="Images/Sultan_Sadiq_Resume1.pdf" download class="btn btn2">Download Resume</a>
             </div>
@@ -131,66 +154,60 @@
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button> 
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Send Message</button>
                 </form>
-                <span id="msg"></span>
+                <span id="msg" role="status"></span>
             </div>
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright &copy; Sultan Sadiq.</p>
+        <p>Copyright &copy; 2026 Sultan Sadiq.</p>
     </div>
-  </div>
+</div>
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
+
+    function opentab(event, tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
-</script>
-
-<script>
-
 
     var sidemenu = document.getElementById("sidemenu");
 
-    function openmenu(){
+    function openmenu() {
         sidemenu.style.right = "0";
     }
-    function closemenu(){
+
+    function closemenu() {
         sidemenu.style.right = "-200px";
     }
 
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxMjhDvkvp3BB9KSpdLLq8KSX8IpWTvedTtS0MihtNAlw-Oz4Z1MgLO1y33SJAhup6o/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg");
 
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        msg.textContent = "Sending...";
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then(function () {
+                msg.textContent = "Message sent successfully.";
+                form.reset();
+                setTimeout(function () { msg.textContent = ""; }, 5000);
+            })
+            .catch(function () {
+                msg.textContent = "Message could not be sent. Please email me directly.";
+            });
+    });
 </script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxMjhDvkvp3BB9KSpdLLq8KSX8IpWTvedTtS0MihtNAlw-Oz4Z1MgLO1y33SJAhup6o/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message Sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-    
 </body>
 </html>
